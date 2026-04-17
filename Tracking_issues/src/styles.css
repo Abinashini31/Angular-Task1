@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+  padding: 20px;
+}
+ 
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+ 
+.High { color: red; }
+.Medium { color: orange; }
+.Low { color: green; }
+ 
+.resolved {
+  opacity: 0.6;
+}
+ 
+button {
+  margin-top: 10px;
+}
+ 
+.done {
+  color: green;
+  font-weight: bold;
+}

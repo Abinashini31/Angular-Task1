@@ -1,0 +1,15 @@
+<div class="card" [class.resolved]="issue().isResolved">
+ 
+  <h3>{{ issue().title }}</h3>
+ 
+  <p [class]="issue().priority">
+    Priority: {{ issue().priority }}
+</p>
+ 
+  @if (!issue().isResolved) {
+<button (click)="markDone()">Mark as Resolved</button>
+  } @else {
+<span class="done">Resolved ✅</span>
+  }
+ 
+</div>
